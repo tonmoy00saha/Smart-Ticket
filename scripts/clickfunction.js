@@ -38,7 +38,7 @@ document.getElementById('apply-btn').addEventListener('click', function () {
     var p=1;
     if (text === "NEW15")
         p = 0.85;
-    else if (text === "Couple20")
+    else if (text === "Couple 20")
         p = 0.80;
     else
     alert('Invalid Coupon');
