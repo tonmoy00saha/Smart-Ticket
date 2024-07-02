@@ -125,7 +125,7 @@
                         </div>
                         <div class="flex flex-row gap-2 bg-[#1DD10026] border-none p-4 rounded-xl">
                             <img src="images/seat-green.png" alt="">
-                            <p class="text-[#1DD100] font-inter text-lg font-medium"><span>40</span> Seat<span>s</span>
+                            <p class="text-[#1DD100] font-inter text-lg font-medium"><span id="available-seat">40</span> Seat<span>s</span>
                                 left</p>
                         </div>
                     </div>
@@ -321,6 +321,9 @@
                             <h3 class="font-medium">Total</h3>
                             <h3 class="font-medium">BDT <span id="total">0</span></h3>
                         </div>
+                        <div class="flex flex-row justify-between font-medium" id="discount-part">
+                            
+                        </div>
                         <div class="rounded-xl bg-white flex flex-row justify-between items-center p-2 my-5">
                             <input type="text" name="" id="coupon-input" placeholder="Have any coupon?" class="ml-3" oninput="couponInput()">
                             <button class="btn text-white font-semibold bg-[#1DD100]" id="apply-btn" disabled>Apply</button>
@@ -334,7 +337,7 @@
                         <p class="mt-6 mb-4 font-inter font-semibold">Passenger Name*</p>
                         <input type="text" placeholder="Enter your name" class="input input-bordered input-lg w-full" required id="name"/>
                         <p class="mt-6 mb-4 font-inter font-semibold">Phone Number*</p>
-                        <input type="text" placeholder="Enter your phone number" class="input input-bordered input-lg w-full" required id="phone-number" oninput="nextBtn()"/>
+                        <input type="tel" placeholder="Enter your phone number" class="input input-bordered input-lg w-full" required id="phone-number" oninput="nextBtn()"/>
                         <p class="mt-6 mb-4 font-inter font-semibold">Email ID</p>
                         <input type="email" placeholder="Enter your email" class="input input-bordered input-lg w-full" />
                         <button class="btn text-white font-semibold bg-[#1DD100] btn-lg w-full my-6" disabled id="next-btn" onclick="next()">Next</button>
